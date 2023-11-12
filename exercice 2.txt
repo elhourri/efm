@@ -1,0 +1,35 @@
+Algorithme  matrice
+Variables
+    N, P, compteur: entier
+    matrice: tableau[N, P]
+
+Début
+    compteur <-- 1
+    Pour i <-- 1 à N   pas 1 faire
+        Pour j <-- 1 à P  pas de 1 faire
+            matrice[i, j] <-- compteur
+            compteur <-- compteur + 1
+        fin Pour
+    fin Pour
+
+    Pour i <-- 1 à N pas  1 faire
+        Pour j <-- 1 à P pas  1 faire
+            Écrire(matrice[i, j] + " ")
+        fin Pour
+
+    fin Pour
+
+
+    Pour i <-- 1 à N pas 1 faire
+        Si i mod 2 = 0 alors
+            Pour j <-- P à 1 pas  -1 faire
+                Écrire(matrice[i, j] + " ")
+            fin Pour
+        Sinon
+            Pour j <-- 1 à P pas  1 faire
+                Écrire(matrice[i, j] + " ")
+            fin Pour
+        fin Si
+        Écrire(fin de ligne)
+    fin Pour
+Fin

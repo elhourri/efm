@@ -1,0 +1,17 @@
+Algorithme maxsomme
+Variables
+    tableau: tableau[1..n] d'entiers
+    sommeMax, sommeCourante: entier
+
+Début
+    Lire(tableau)
+    sommeMax <-- tableau[1]
+    sommeCourante <-- tableau[1]
+
+    Pour i <-- 2 à n avec un pas de 1 faire
+        sommeCourante <-- Max(tableau[i], sommeCourante + tableau[i])
+        sommeMax <-- Max(sommeMax, sommeCourante)
+    fin Pour
+
+    Ecrire("La somme maximale est: ", sommeMax)
+Fin
